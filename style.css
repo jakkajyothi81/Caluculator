@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:100vh;
+    background: linear-gradient(45deg,#0a0a0a,#3a4452);
+
+}
+#part2{
+    height:550px;
+    width:380px;
+    max-width: 80%;
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: 0px 3px 15px grey;
+}
+.part3{
+    height: 80%;
+    width: 100%;
+    /* background-color: yellow; */
+    display: grid;
+    row-gap: 10px;
+}
+
+input{
+    width:100%;
+    border: none;
+    outline: none;
+    padding:18px;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px grey;
+    font-size:35px;
+    text-align: right;
+    cursor: pointer;
+    color: white;
+}
+.row{
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:15px;
+}
+.operator{
+    color: greenyellow;
+    color: white;
+    font-size: 22px;
+    height: 60px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 0 0 10px white;
+
+}
+
+.ram{
+    color:orange;
+    font-weight:550;
+   }
+   .sai{
+    color:greenyellow;
+    font-weight:550;
+   }
+
+/* ---------------mobile version maximum width 600px */
+
+@media screen and (max-width:600px) {
+
+    #part2{
+        height:550px;
+        width:350px;
+        padding:15px;
+        padding-bottom: 0;
+    }
+    .part3{
+        row-gap:3px;
+        /* background-color: yellow; */
+    }
+    
+    input{
+        margin-top:0px;
+        width:100%;
+        padding:10px;
+    }
+    .row{
+        margin-top:10px;
+        justify-content: space-between;
+    }
+    .operator{
+        color: white;
+        font-size: 22px;
+        height: 50px;
+        width: 60px;
+        border-radius: 5px;
+        background-color: transparent;
+        box-shadow: 0 0 10px white;
+    
+    }
+    .ram{
+        color:orange;
+        font-weight:550;
+       }
+       .sai{
+        color:greenyellow;
+        font-weight:550;
+       }
+}
